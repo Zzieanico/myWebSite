@@ -66,4 +66,16 @@ project/     # Корневая папка
 |
 |–– .gitignore/   # Файл, указывающий, какие файлы Git должен игнорировать
 
+### Жизненный цикл
 
+Файлы в Git проходят несколько стадий:
+1. Untracked – Git foesn't know about them.
+2. Modified – Files, which are already in the repository, but were changed.
+3. Staged – Files which are prepared to commit via GIT ADD.
+4. Committed – Changes recorded into the repository via GIT COMMIT.
+
+### Важные правила
+
+Коммиты должны быть атомарными – каждое изменение логические завершённое.
+.gitignore обязателен, чтобы не засорять репозитории ненужными файлами.
+README.md – лицо проекта – должен содержать описание, установку и использование.
