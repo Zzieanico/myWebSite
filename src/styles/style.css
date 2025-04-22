@@ -14,3 +14,9 @@
  background-size: cover;
  height: 100vh;
 }
+
+.svg-icon {
+ width: 26px;
+ height: 26px;
+ background-color: red;
+}
