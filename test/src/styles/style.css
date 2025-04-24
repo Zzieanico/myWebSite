@@ -2,21 +2,103 @@
  margin: 0;
 }
 
-.header {
- padding: 8px 16px;
- font-size: 20px;
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .main {
- background-image: url("../../assets/images/dog.webp");
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-image: url(../../assets/images/dog.webp);
  background-position: center;
  background-size: cover;
  height: 100vh;
 }
 
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ padding: 8px 16px;
+
+ font-size: 20px;
+}
+
+.logo {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ width: 56px;
+ height: 56px;
+
+ border-radius: 10px;
+
+ background-color: #ffffff;
+}
+
+.navigation {
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+
+ list-style: none;
+
+ li {
+  padding: 4px 12px;
+  background-color: #ffffff;
+
+  border-radius: 10px;
+
+  a {
+   color: #976a00;
+   text-decoration: none;
+  }
+ }
+}
+
+.welcome {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+
+ padding: 10px;
+
+ border-radius: 10px;
+
+ background-color: #ffffff;
+
+ h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #976a00;
+  text-decoration: underline;
+ }
+
+ p {
+  font-size: 18px;
+  color: #976a00;
+ }
+
+ button {
+  font-size: 18px;
+  color: #976a00;
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 10px;
+ }
+}
+
+.icons {
+ display: flex;
+ align-items: end;
+ flex-direction: column;
+ gap: 4px;
+
+ padding: 20px;
+}
+
 .svg-icon {
- width: 26px;
- height: 26px;
- background-color: red;
+ width: 50px;
+ height: 50px;
 }
