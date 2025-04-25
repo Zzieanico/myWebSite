@@ -41,8 +41,6 @@
  flex-direction: row;
  gap: 20px;
 
- transform: translate(-100%, 0%);
-
  list-style: none;
 
  li {
@@ -102,7 +100,73 @@
  padding: 20px;
 }
 
+.social-container {
+ padding: 20px;
+ position: relative;
+ display: inline-block;
+}
+
+.social-toggle {
+ position: absolute;
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.main-icon{
+ width: 40px;
+ height: 40px;
+ background-color: #555;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ transition: transform 0.3s;
+}
+
+.main-icon:hover {
+ transform: scale(1.1);
+}
+
+.main-icon::before {
+ content: "+";
+ color: white;
+ font-size: 24px;
+ font-weight: bold;
+ transition: all 0.3s;
+}
+
+.social-toggle:checked + .main-icon::before {
+ content: "x";
+ font-size: 24px;
+}
+
+.social-icons {
+ position: absolute;
+ bottom: 60px;
+ left: 40px;
+ transform: translateX(-50%);
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ padding: 10px;
+ background-color: white;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ margin-bottom: 10px;
+
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.3s ease-out; 
+}
+
+
 .svg-icon {
  width: 50px;
  height: 50px;
 }
+
+
+
+ 
