@@ -70,7 +70,7 @@
 
  h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 68px;
   color: #976a00;
   text-decoration: underline;
  }
@@ -161,12 +161,47 @@
  transition: all 0.3s ease-out; 
 }
 
+.social-toggle:checked ~ .social-icons {
+ opacity: 1;
+ visibility: visible;
+ transform: translateX(-50%) translateY(0);
+}
+
+.social-icon {
+ width: 30px;
+ height: 30px;
+ cursor: pointer;
+ transition: transform 0.2s;
+}
+
+.social-icon:hover {
+ transform: scale(1.2);
+}
+
 
 .svg-icon {
  width: 50px;
  height: 50px;
 }
 
-
-
+.catalogue {
+ padding: 40px 60px;
+ background-image: url(../../assets/images/backgr2.png);
+}
  
+.catalogue-text {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ color: #ffffff;
+
+ h1 {
+  font-size: 68px;
+ }
+
+ p {
+  font-size: 18px;
+  width: 400px;
+  text-align: justify;
+ }
+}
