@@ -7,7 +7,7 @@
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- background-image: url(../../assets/images/dog.webp);
+ background-image: url(../../assets/images/background/dog.webp);
  background-position: center;
  background-size: cover;
  height: 100vh;
@@ -134,12 +134,13 @@
  color: white;
  font-size: 24px;
  font-weight: bold;
- transition: all 0.3s;
+ transition: all 0.5s;
 }
 
 .social-toggle:checked + .main-icon::before {
  content: "x";
  font-size: 24px;
+ transition: all 0.5s;
 }
 
 .social-icons {
@@ -186,7 +187,7 @@
 
 .catalogue {
  padding: 40px 60px;
- background-image: url(../../assets/images/backgr2.png);
+ background-image: url(../../assets/images/background/backgr2.png);
 }
  
 .catalogue-text {
@@ -204,4 +205,9 @@
   width: 400px;
   text-align: justify;
  }
+}
+
+.slider {
+ overflow: hidden;
+ gap: 0;
 }

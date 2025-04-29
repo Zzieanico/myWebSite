@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="../src/styles/style.css">
- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
- <title>Site</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+   <link rel="stylesheet" href="../src/styles/style.css">
+   <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+   <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+   <title>Site</title>
 </head>
+
 <body>
- <section class="main">
-  <header class="header">
-   <div class="logo">
-    <img class="logo" src="../assets/svg/logo.svg" alt="" />
-   </div>
+   <section class="main">
+      <header class="header">
+         <div class="logo">
+            <img class="logo" src="../assets/svg/logo.svg" alt="" />
+         </div>
 
-   <nav>
-    <ul class="navigation">
-     <li><a href="">Главная</a></li>
-     <li><a href="">О нас</a></li>
-     <li><a href="">Галерея</a></li>
-     <li><a href="">Контакты</a></li>
-    </ul>
-   </nav>
-  </header>
+         <nav>
+            <ul class="navigation">
+               <li><a href="">Главная</a></li>
+               <li><a href="">О нас</a></li>
+               <li><a href="">Галерея</a></li>
+               <li><a href="">Контакты</a></li>
+            </ul>
+         </nav>
+      </header>
 
-  <div class="welcome">
-   <h1>Добро пожаловать </br> В Карелию</h1>
-   <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    Quaerat eius, eaque facilis cero optio nostrum laborum rerum
-    ratione reiciendis cumque doloremque beatae ut porro fugiat
-    recusandae fugit, at consequuntur totam!
-   </p>
-   <button>Связаться</button>
-  </div>
+      <div class="welcome">
+         <h1>Добро пожаловать </br> В Карелию</h1>
+         <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Quaerat eius, eaque facilis cero optio nostrum laborum rerum
+            ratione reiciendis cumque doloremque beatae ut porro fugiat
+            recusandae fugit, at consequuntur totam!
+         </p>
+         <button>Связаться</button>
+      </div>
 
-  <div class="social-container">
-   <input type="checkbox" id="socialToggle" class="social-toggle">
+      <div class="social-container">
+         <input type="checkbox" id="socialToggle" class="social-toggle">
 
-   <label for="socialToggle" class="main-icon"></label>
+         <label for="socialToggle" class="main-icon"></label>
 
-   <div class="social-icons">
-    <img class="social-icon" src="../assets/svg/vk.svg" alt="VK">
-    <img class="social-icon" src="../assets/svg/tg.svg" alt="TG">
-   </div>
-  </div>
-  </section>
+         <div class="social-icons">
+            <img class="social-icon" src="../assets/svg/vk.svg" alt="VK">
+            <img class="social-icon" src="../assets/svg/tg.svg" alt="TG">
+         </div>
+      </div>
+   </section>
 
-  <section class="catalogue">
-   <div class="catalogue-text">
-    <h1>КАТАЛОГ</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit voluptatem aliquam temporibus deserunt obcaecati cupiditate necessitatibus repellendus accusantium quisquam!</p>
-   </div>
+   <section class="catalogue">
+      <div class="catalogue-text">
+         <h1>КАТАЛОГ</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit voluptatem aliquam temporibus
+            deserunt obcaecati cupiditate necessitatibus repellendus accusantium quisquam!</p>
+      </div>
 
-  </section>
+      <div class="your-class">
+
+         <figure>
+            <figcaption><img src="../assets/images/Poodle.png" alt="" width="200px"  height="200px" ></figcaption>
+         </figure>
+         <figure>
+            <figcaption><img src="../assets/images/akita-inu.png" alt="" width="200px"  height="200px" ></figcaption>
+         </figure>
+         <figure>
+            <figcaption><img src="../assets/images/Alaskan Malamut.png" alt="" width="200px"  height="200px" ></figcaption>
+         </figure>
+         <figure>
+            <figcaption><img src="../assets/images/chau-chau.png" alt="" width="200px"  height="200px" ></figcaption>
+         </figure>
+         <figure>
+            <figcaption><img src="../assets/images/Pekingese.png" alt="" width="200px"  height="200px" ></figcaption>
+         </figure>
+       </div>
+
+
+
+       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+       <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+       <script type="text/javascript">
+         $(document).ready(function(){
+            $('.your-class').slick({
+               dots: true,
+               arrows: true,
+               slidesToShow: 3,
+               slidesToScroll: 1,
+               autoplay: false,
+               autoplaySpeed: 2000,
+               infinite: true,
+            });
+         });
+       </script>
+
+   </section>
 </body>
+
 </html>
