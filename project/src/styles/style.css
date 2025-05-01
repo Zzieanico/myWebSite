@@ -211,3 +211,7 @@
  overflow: hidden;
  gap: 0;
 }
+.figcaption-slick {
+ color: white;
+ font-weight: bold;
+}
