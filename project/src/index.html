@@ -133,12 +133,77 @@
 
          <div class="koiran-kuvat">
             <div>
-               <img src="../assets/images/koira1.jpg" alt="Изображение"></ш>
-               <img src="../assets/images/koira2.jpeg" alt="Изображение">
+               <img src="../assets/images/koirat/koira1.jpg" alt="Изображение"></ш>
+               <img src="../assets/images/koirat/koira2.jpeg" alt="Изображение">
             </div>
-            <img src="../assets/images/koira3.jpeg" alt="Изображение">
+            <img src="../assets/images/koirat/koira3.jpeg" alt="Изображение">
          </div>
       </div>
+   </section>
+   <section class="gallery">
+      <div class="title">
+         <h1>ГАЛЕРЕЯ</h1>
+      </div>
+      <div class="gallery-section">
+         <select id="albumSelect" class="album-select">
+            <div> <option value="small">Маленькие собаки</option>
+               <option value="medium">Средние собаки</option>
+               <option value="large">Большие собаки</option></div>
+           
+          </select>
+        </div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+      
+      <script>
+        const albums = {
+          small: [
+            'https://placedog.net/600/400?id=1',
+            'https://placedog.net/600/400?id=2',
+            'https://placedog.net/600/400?id=3',
+            'https://placedog.net/600/400?id=4',
+            'https://placedog.net/600/400?id=5',
+            'https://placedog.net/600/400?id=6'
+          ],
+          medium: [
+            'https://placedog.net/600/400?id=10',
+            'https://placedog.net/600/400?id=11',
+            'https://placedog.net/600/400?id=12',
+            'https://placedog.net/600/400?id=13',
+            'https://placedog.net/600/400?id=14',
+            'https://placedog.net/600/400?id=15'
+          ],
+          large: [
+            'https://placedog.net/600/400?id=20',
+            'https://placedog.net/600/400?id=21',
+            'https://placedog.net/600/400?id=22',
+            'https://placedog.net/600/400?id=23',
+            'https://placedog.net/600/400?id=24',
+            'https://placedog.net/600/400?id=25'
+          ]
+        };
+      
+        const albumSelect = document.getElementById('albumSelect');
+        const galleryGrid = document.getElementById('galleryGrid');
+      
+        function loadAlbum(albumName) {
+          galleryGrid.innerHTML = '';
+          albums[albumName].forEach(url => {
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = 'Фото собаки';
+            galleryGrid.appendChild(img);
+          });
+        }
+      
+        albumSelect.addEventListener('change', (e) => {
+          loadAlbum(e.target.value);
+        });
+      
+        // Загрузка альбома по умолчанию
+        loadAlbum(albumSelect.value);
+      </script>
+      
    </section>
 </body>
 
