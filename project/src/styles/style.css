@@ -187,7 +187,8 @@
 
 .catalogue {
  padding: 40px 60px;
- background-image: url(../../assets/images/background/backgr2.png);
+ background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url(../../assets/images/background/backgr2.png);
 }
  
 .catalogue-text {
@@ -220,7 +221,8 @@
 }
 
 .about {
- background-image: url(../../assets/images/background/backgr3.jpeg);
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url(../../assets/images/background/backgr3.jpeg);
  background-position:center;
  background-size:cover;
  padding: 30px 60px;
@@ -279,7 +281,8 @@
 }
 
 .gallery {
-   background-image: url(../../assets/images/background/backgr4.jpg);
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url(../../assets/images/background/backgr4.jpg);
    display: flex;
    flex-direction: column;
    background-position: center;
@@ -322,4 +325,15 @@
 
  .gallery-grid img:hover {
    transform: scale(1.03);
+ }
+
+ .contacts {
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+   url(../../assets/images/background/backgr5.jpg);
+   display: flex;
+   flex-direction: column;
+   background-position: center;
+   background-size: cover;
+   padding: 30px 60px;
+   gap: 40px;  
  }
