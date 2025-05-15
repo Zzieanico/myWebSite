@@ -386,3 +386,55 @@
 .contacts-title {
 margin:  0 auto;
 }
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   padding: 20px 40px;
+   background-color: #55555540;
+}
+
+.logo-and-navi {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 10px 10px;
+
+   ul {
+      padding-top: 15px;
+   }
+   
+   li {
+      padding: 4px 12px;
+      background-color: #ffffff;
+    
+      border-radius: 10px;
+    
+      a {
+       color: black;
+       text-decoration: none;
+      }
+     }
+}
+
+.copyright {
+   p {
+      color:#000000;
+
+   }
+   p b {
+      color: green;
+   }
+}
+
+.iconas {
+   display: flex;
+   flex-direction: row;
+   padding: 20px 0;
+   img {
+      height: auto;
+      width: 60px;
+      padding-right: 20px;
+   }
+}
